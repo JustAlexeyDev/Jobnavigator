@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <!-- METAS -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <!-- SCRIPTS -->
+  <script src="./tailwind.config.js"></script>
+  <script src="./js/form.js"></script>
+  <!-- LINKS -->
+  <link rel="stylesheet" href="/css/output.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <!-- STYLES -->
+  <style>
+    input {outline:none;}
+  </style>
+
+  <title>Let's go</title>
+</head>
+<body class="bg-[#] text-[#] dark:bg-[#] dark:text-[#]">
+  <!-- HEADER -->
+  <header class="top-0 left-0 w-full p-4 bg-[#8774E1] text-[#fff] h-[100px] flex justify-center items-center">
+    <span class="text-center">
+      <h1 class="text-2xl"><b>Вход в личный кабинет</b></h1>
+    </span>
+  </header>
+  <!-- MAIN -->
+  <main class="p-4">
+    <div class="text-center text-[20px]">
+      <h1 class="font-bold">Заполните резюме</h1>
+    </div>
+    <form action="" class="">
+      <span>
+        <h2 class="text-[20px] font-bold">Контактные данные</h2>
+      </span>
+      <span>
+        <h2 class="text-[16px] font-bold">Имя и фамилия:</h2>
+      </span>
+      <div>
+        <br>
+        <span class="border-[#000000] border-opacity-60 border-2 px-4 py-2 w-[250px] rounded-md">
+          <input class="" type="text" id="name" placeholder="Имя" required>
+        </span>
+        <br>
+        <br>
+        <span class="border-[#000000] border-opacity-60 border-2 px-4 py-2 w-[250px] rounded-md">
+          <input type="text" id="lastname" placeholder="Фамилия" required>
+        </span>
+      </div>
+      <br>
+      <span>
+        <h2 class="text-[16px] font-bold">Телефон:</h2>
+      </span>
+      <br>
+      <span class="border-[#000000] border-opacity-60 border-2 px-4 py-2 w-[250px] rounded-md">
+        <input type="tel" id="phone" name="phone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="+7 (123) - 456 - 78 - 90">
+      </span>
+      <br>
+      <br>
+      <span>
+        <h2 class="text-[16px] font-bold">Город:</h2>
+      </span>
+      <br>
+      <span class="border-[#000000] border-opacity-60 border-2 px-4 py-2 w-[250px] rounded-md">
+        <input type="text" id="city" placeholder="Выберите город" required>
+      </span>
+      <br>
+      <br>
+      <span>
+        <h2 class="text-[20px] font-bold">Основная информация</h2>
+      </span>
+      <br>
+      <span>
+        <h2 class="text-[16px] font-bold">Дата рождения:</h2>
+      </span>
+      <br>
+      <span class="border-[#000000] border-opacity-60 border-2 px-4 py-2 w-[250px] rounded-md">
+        <input type="date" id="date" required>
+      </span>
+      <br>
+      <br>
+      <span>
+        <h2 class="text-[16px] font-bold">Пол:</h2>
+      </span>
+      <br>
+      <div class="flex justify-between">
+        <span class="hover:bg-[#8774E1] hover:text-[#fff] border-[#000000] border-opacity-60 border-2 px-4 py-2 w-[250px] rounded-md">
+          <div class="text-center">
+            <p>Мужской</p>
+            <input type="radio">
+          </div>
+        </span>
+        <span class="p-1"></span>
+        <span class="hover:bg-[#8774E1] hover:text-[#fff] border-[#000000] border-opacity-60 border-2 px-4 py-2 w-[250px] rounded-md">
+          <div class="text-center">
+            <p>Женский</p>
+            <input type="radio">
+          </div>
+        </span>
+      </div>
+      </span> 
+      <br>
+      <span>
+        <h2 class="text-[20px] font-bold">Специальность</h2>
+      </span>
+      <br>
+      <span>
+        <h2 class="text-[16px] font-bold">Желаемая должность:</h2>
+      </span>
+      <br>
+      <span class="border-[#000000] border-opacity-60 border-2 px-4 py-2 w-[250px] rounded-md">
+        <input type="text" id="" required>
+      </span>
+      <br>
+      <br>
+      <span>
+        <h2 class="text-[20px] font-bold">Образование</h2>
+      </span>
+      <span>
+        <h2 class="text-[16px] font-bold">Уровень образования:</h2>
+      </span>
+      <br>
+      <span class="border-[#000000] border-opacity-60 border-2 px-4 py-2 w-[250px] rounded-md">
+        <input type="text" id="" placeholder="Укажите ваше обраование" required>
+      </span>
+      <br>
+      <br>
+      <span class="text-center">
+        <button class="" type="submit">Отправить</button>        
+      </span>
+
+    </form>
+
+  </main>
+  <!-- SCRIPTS -->
+  <script>
+    function number() {
+      
+    }
+  </script>
+
+</body>
+
+</html>
