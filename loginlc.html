@@ -10,7 +10,8 @@
   <script src="./js/form.js"></script>
   <!-- LINKS -->
   <link rel="stylesheet" href="/css/output.css">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="./assets/icons/Logo.svg" type="image/x-icon">
+  <link rel="stylesheet" href="./css/style.css">
   <!-- STYLES -->
   <style>
     input {outline:none;}
@@ -126,17 +127,22 @@
       </span>
       <br>
       <br>
-      <span class="text-center">
-        <button class="" type="submit">Отправить</button>        
-      </span>
+      <div class="text-center">
+        <span class="font-bold bg-[#8774E1] hover:bg-[#ff5e00] text-white p-2 rounded-[20px]">
+          <button onclick="submit()" class="" type="">Отправить</button>        
+        </span>        
+      </div>
+
 
     </form>
 
   </main>
   <!-- SCRIPTS -->
   <script>
-    function number() {
-      
+    function submit() {
+      setTimeout(function(){
+        window.location.href = './mainPage.html';
+      }, 2 * 1000);      
     }
   </script>
 
