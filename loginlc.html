@@ -14,12 +14,15 @@
   <link rel="stylesheet" href="./css/style.css">
   <!-- STYLES -->
   <style>
+    * {
+      margin: 0;
+    }
     input {outline:none;}
   </style>
 
-  <title>Let's go</title>
+  <title>Login</title>
 </head>
-<body class="bg-[#] text-[#] dark:bg-[#] dark:text-[#]">
+<body class="bg-[#] text-[#] dark:bg-[#] dark:text-[#] md:grid md:justify-center lg:grid lg:justify-center">
   <!-- HEADER -->
   <header class="top-0 left-0 w-full p-4 bg-[#8774E1] text-[#fff] h-[100px] flex justify-center items-center">
     <span class="text-center">
@@ -31,7 +34,7 @@
     <div class="text-center text-[20px]">
       <h1 class="font-bold">Заполните резюме</h1>
     </div>
-    <form action="" class="">
+    <form action="" class="" id="login">
       <span>
         <h2 class="text-[20px] font-bold">Контактные данные</h2>
       </span>
@@ -55,7 +58,7 @@
       </span>
       <br>
       <span class="border-[#000000] border-opacity-60 border-2 px-4 py-2 w-[250px] rounded-md">
-        <input type="tel" id="phone" name="phone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="+7 (123) - 456 - 78 - 90">
+        <input type="tel" id="phone" name="phone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="+7(123)-456-7890">
       </span>
       <br>
       <br>
@@ -64,7 +67,14 @@
       </span>
       <br>
       <span class="border-[#000000] border-opacity-60 border-2 px-4 py-2 w-[250px] rounded-md">
-        <input type="text" id="city" placeholder="Выберите город" required>
+       <select>
+        <option selected value="Yakutsk">Якутск</option>
+        <option value="Yakutsk">Москва</option>
+        <option value="Yakutsk">Санкт-Петербург</option>
+        <option value="Yakutsk">Олёкминск</option>
+        <option value="Yakutsk">Новосибирск</option>
+        <option value="Yakutsk">Саратов</option>
+       </select>
       </span>
       <br>
       <br>
@@ -89,14 +99,12 @@
         <span class="hover:bg-[#8774E1] hover:text-[#fff] border-[#000000] border-opacity-60 border-2 px-4 py-2 w-[250px] rounded-md">
           <div class="text-center">
             <p>Мужской</p>
-            <input type="radio">
           </div>
         </span>
         <span class="p-1"></span>
         <span class="hover:bg-[#8774E1] hover:text-[#fff] border-[#000000] border-opacity-60 border-2 px-4 py-2 w-[250px] rounded-md">
           <div class="text-center">
             <p>Женский</p>
-            <input type="radio">
           </div>
         </span>
       </div>
@@ -111,7 +119,7 @@
       </span>
       <br>
       <span class="border-[#000000] border-opacity-60 border-2 px-4 py-2 w-[250px] rounded-md">
-        <input type="text" id="" required>
+        <input type="text" id="" required placeholder="Опишите вашу должность">
       </span>
       <br>
       <br>
@@ -119,11 +127,16 @@
         <h2 class="text-[20px] font-bold">Образование</h2>
       </span>
       <span>
-        <h2 class="text-[16px] font-bold">Уровень образования:</h2>
+        <h2 class="text-[16px] font-bold w-full">Уровень образования:</h2>
       </span>
       <br>
-      <span class="border-[#000000] border-opacity-60 border-2 px-4 py-2 w-[250px] rounded-md">
-        <input type="text" id="" placeholder="Укажите ваше обраование" required>
+      <span class="border-[#000000] border-opacity-60 border-2 px-4 py-2 w-auto rounded-md text-black">
+        <select form="login" id="" placeholder="Укажите ваше обраование" required>
+          <option selected value="Среднее">Среднее</option>
+          <option value="Высшее">Высшее</option>
+          <option value="Магистратура">Магистратура</option>
+          <option value="Бакалавриат">Бакалавриат</option>
+        </select>
       </span>
       <br>
       <br>

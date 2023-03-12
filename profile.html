@@ -1,3 +1,8 @@
+<!-- 
+    Client page for demo
+ -->
+
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -7,7 +12,6 @@
   <meta name="viewport" content="width=device-width, user-scalable=no">
   <!-- SCRIPTS -->
   <script src="./tailwind.config.js"></script>
-  <script src="./js/search.js"></script>
   <!-- LINKS -->
   <link rel="stylesheet" href="/css/output.css">
   <link rel="shortcut icon" href="./assets/icons/Logo.svg" type="image/x-icon">
@@ -23,29 +27,25 @@
   <!-- HEADER -->
   <header class="top-0 left-0 w-full p-4 bg-[#fff] text-[#fff] h-[100px] flex justify-center items-center">
     <div>
-      <div class="border-[#000000] border-opacity-60 border-2 px-4 py-2 text-black rounded-[20px]">
-        <input  type="search" id="input">
-        <button id="btn" class="" type="submit"><img src="./assets/othernav/search.png" alt="search"></button>
+      <div class="">
+        <input type="text">
       </div>
     </div>
   </header>
   <!-- MAIN -->
   <main class="p-4">
-    <div class="">
 
-
-    </div>
 
 
   </main>
   <!-- FOOTER -->
   <footer class="fixed left-0 bottom-0 bg-[#fff] p-4 w-full">
     <nav class="flex justify-between">
-      <button onclick="window.location.href = './mainPage.html'"><img width="40" src="./assets/nav/hoverhome.svg" alt="home"></button>
+      <button onclick="window.location.href = './mainPage.html'"><img width="40" src="./assets/nav/home.svg" alt="home"></button>
       <button onclick="window.location.href = '/'"><img width="40" src="./assets/nav/work.svg" alt="works"></button>
       <button onclick="window.location.href = '/'"><img width="40" src="./assets/nav/archivebook.svg" alt="lean"></button>
       <button onclick="window.location.href = '/'"><img width="40" src="./assets/nav/notification.svg" alt="bells"></button>
-      <button onclick="window.location.href = '/profile.html'"><img width="40" src="./assets/nav/profile.svg" alt="profile"></button>
+      <button onclick="window.location.href = './profile.html'"><img width="40" src="./assets/nav/hoverprofile.svg" alt="profile"></button>
     </nav>
 
   </footer>
